@@ -1,0 +1,67 @@
+# OS and editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.iml
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Java/build artifacts
+*.class
+*.out
+target/
+build/
+dist/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# VMware/virtual machine files
+*.vmdk
+*.vmx
+*.vmxf
+*.vmsd
+*.vmem
+*.vmss
+*.vmsn
+*.nvram
+*.scoreboard
+*.lck
+*.lck/
+*.vdi
+*.ova
+*.ovf
+*.iso
+
+# Local lab VMs for EzDomain
+/2. EzDomain-flag01/WEB/
+/2. EzDomain-flag01/DC/
+
+# Local exploit tools/downloaded dependencies
+/2. EzDomain-flag01/JNDIExploit_v1.2/
+
+# Local reverse-shell scratch file
+/2. EzDomain-flag01/s
+
+# Generated tar payloads
+/4. */*.tar
+
+# Nested upstream repository clone
+/miniLCTF_2026/
