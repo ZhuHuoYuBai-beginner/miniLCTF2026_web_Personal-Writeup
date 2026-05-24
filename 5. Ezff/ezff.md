@@ -143,19 +143,17 @@ Java 反序列化里常用PriorityQueue（优先队列）触发比较器
 
 ```text
 Fury.deserialize（入口：Fury 反序列化）
-```
 
 -> PriorityQueue.readObject（触发器：PriorityQueue）
 
 -> BeanComparator.compare（中间跳板：BeanComparator）
 
-```text
 -> PropertyUtils.getProperty（this.property != null）
-```
 
 -> OgnlStack.getValue（最终 Sink：OgnlStack的getValue）
 
 -> OGNL 表达式执行
+```
 
 理想情况下，我们想让BeanComparator取这个属性：
 
